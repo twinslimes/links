@@ -84,11 +84,25 @@ main {
     margin-right: auto;
 }
 
+/* Section Titles */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000;
+    letter-spacing: -0.5px;
+}
+
 /* Gallery Grid */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-gap: 12px;
+}
+
+.gallery-spacer {
+    grid-column: 1 / -1;
+    height: 30px;
 }
 
 .gallery-item {
