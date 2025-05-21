@@ -120,8 +120,8 @@ body {
     animation-delay: 5s;
 }
 
-/* Art Elements */
-.art-elements {
+/* Side Images */
+.side-images {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -132,41 +132,84 @@ body {
     overflow: hidden;
 }
 
-.art-element {
+.side-image {
     position: absolute;
-    opacity: 0.04 !important;
-    filter: grayscale(1) contrast(0.9);
-    border-radius: 8px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background: white;
+    border: 2px solid var(--grid-color);
+    box-shadow: 
+        0 5px 15px rgba(0, 0, 0, 0.05),
+        0 0 0 1px rgba(0, 0, 0, 0.03) inset;
     transition: all 0.5s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.art1 {
-    max-width: 60px !important;
-    max-height: 60px !important;
-    top: 10%;
-    right: 5%;
-    transform: rotate(5deg);
-    animation: floatArt 15s ease-in-out infinite;
+.side-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 6px solid white;
+    z-index: 1;
+    pointer-events: none;
 }
 
-.art2 {
-    max-width: 50px !important;
-    max-height: 50px !important;
-    bottom: 10%;
+.side-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.side-image:hover img {
+    transform: scale(1);
+}
+
+.side-image:hover {
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.08),
+        0 0 0 1px var(--secondary) inset;
+}
+
+.side-image.left {
     left: 5%;
-    transform: rotate(-10deg);
-    animation: floatArt 18s ease-in-out infinite reverse;
+    top: 20%;
+    transform: rotate(-5deg);
+    animation: float 15s ease-in-out infinite;
+}
+
+.side-image.right {
+    right: 5%;
+    top: 20%;
+    transform: rotate(5deg);
+    animation: float 18s ease-in-out infinite reverse;
+}
+
+.side-image.bottom-left {
+    left: 10%;
+    bottom: 5%;
+    width: 180px;
+    height: 180px;
+    transform: rotate(3deg);
+    animation: float 20s ease-in-out infinite;
     animation-delay: 2s;
 }
 
-@keyframes floatArt {
-    0%, 100% {
-        transform: translateY(0) rotate(var(--rotation, 0deg));
-    }
-    50% {
-        transform: translateY(-15px) rotate(var(--rotation, 0deg));
-    }
+.side-image.bottom-right {
+    right: 10%;
+    bottom: 5%;
+    width: 170px;
+    height: 170px;
+    transform: rotate(-3deg);
+    animation: float 17s ease-in-out infinite reverse;
+    animation-delay: 1s;
 }
 
 @keyframes float {
@@ -181,6 +224,7 @@ body {
 .container {
     max-width: 600px;
     width: 100%;
+    margin: 0 auto;
     padding: 40px 30px;
     text-align: center;
     position: relative;
@@ -355,8 +399,27 @@ h1 {
         font-size: 1rem;
     }
     
-    .art1, .art2 {
-        max-width: 40px !important;
-        max-height: 40px !important;
+    .side-image {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    
+    .side-image.left {
+        left: 2%;
+        top: 10%;
+    }
+    
+    .side-image.right {
+        right: 2%;
+        top: 10%;
+    }
+    
+    .side-image.bottom-left, 
+    .side-image.bottom-right {
+        display: none;
+    }
+    
+    .wireframe-elements {
+        opacity: 0.5;
     }
 } 
