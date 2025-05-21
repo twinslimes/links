@@ -146,6 +146,53 @@ main {
     border: none;
 }
 
+/* SoundCloud items */
+.soundcloud-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.soundcloud-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.soundcloud-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.soundcloud-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 85, 0, 0.7);
+    padding: 8px 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.soundcloud-overlay span {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.soundcloud-link:hover .soundcloud-thumbnail img {
+    transform: scale(1.05);
+}
+
+.soundcloud-link:hover .soundcloud-overlay {
+    opacity: 1;
+}
+
 /* Footer */
 footer {
     padding: 30px 0;
