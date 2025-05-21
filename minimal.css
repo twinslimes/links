@@ -50,6 +50,13 @@ header {
     margin-top: 5px;
 }
 
+.bio {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 5px;
+    font-style: italic;
+}
+
 .nav-links {
     display: flex;
     gap: 25px;
