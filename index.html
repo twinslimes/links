@@ -6,126 +6,72 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Twin Slimes Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css?v=1.0">
+    <title>twinslimes</title>
+    <link rel="stylesheet" href="minimal.css?v=1.1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="grid-background"></div>
-    
-    <div class="wireframe-elements">
-        <div class="wireframe-circle"></div>
-        <div class="wireframe-square"></div>
-        <div class="wireframe-triangle"></div>
-    </div>
-    
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="img/profilepicture2.jpg?v=1.1" alt="Twin Slimes" class="profile-img">
-                <h1>Twin Slimes</h1>
+                <h1>twinslimes</h1>
+                <p class="location">Jude Wasson<br>Charlotte, NC</p>
             </div>
             <nav>
-                <ul class="nav-links">
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#videos">Videos</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
+                <div class="nav-links">
+                    <a href="https://soundcloud.com/twinslimes" target="_blank">SoundCloud</a>
+                    <a href="https://www.youtube.com/@twin.slimes" target="_blank">YouTube</a>
+                    <a href="https://www.instagram.com/jude.wasson/" target="_blank">Instagram</a>
+                    <a href="https://x.com/twinslimess" target="_blank">Twitter</a>
+                    <a href="https://www.tiktok.com/@twinslimes01" target="_blank">TikTok</a>
+                    <a href="https://discord.gg/JfM2UDyTRW" target="_blank">Discord</a>
+                    <a href="https://github.com/twinslimes" target="_blank">GitHub</a>
+                </div>
             </nav>
         </div>
     </header>
     
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Artist / Producer / Creative / Filmmaker / Developer</h1>
-                <p>Welcome to my digital playground. Explore my creations, from visual art to music and code.</p>
-                <div class="social-links">
-                    <a href="https://soundcloud.com/twinslimes" target="_blank" class="social-icon" title="SoundCloud">🎵</a>
-                    <a href="https://www.youtube.com/@twin.slimes" target="_blank" class="social-icon" title="YouTube">📹</a>
-                    <a href="https://www.instagram.com/jude.wasson/" target="_blank" class="social-icon" title="Instagram">📸</a>
-                    <a href="https://x.com/twinslimess" target="_blank" class="social-icon" title="X/Twitter">𝕏</a>
-                    <a href="https://www.tiktok.com/@twinslimes01" target="_blank" class="social-icon" title="TikTok">🎬</a>
-                    <a href="https://discord.gg/JfM2UDyTRW" target="_blank" class="social-icon" title="Discord">💬</a>
-                    <a href="https://github.com/twinslimes" target="_blank" class="social-icon" title="GitHub">💻</a>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/CATDANCEHEAVEN.jpg?v=1.2" alt="Art Piece">
+            </div>
+            <div class="gallery-item">
+                <img src="img/2001.jpg?v=1.2" alt="Art Piece">
+            </div>
+            <div class="gallery-item">
+                <img src="img/phonecrying.png?v=1.2" alt="Art Piece">
+            </div>
+            <div class="gallery-item">
+                <img src="img/phonecrying2.png?v=1.2" alt="Art Piece">
+            </div>
+            <div class="gallery-item">
+                <img src="img/profilepicture2.jpg?v=1.2" alt="Art Piece">
+            </div>
+            
+            <!-- YouTube embeds -->
+            <div class="gallery-item video">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/tM9xwNceEm8" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-        </section>
-        
-        <section id="gallery" class="gallery-section">
-            <h2 class="section-title">Art Gallery</h2>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="img/CATDANCEHEAVEN.jpg?v=1.1" alt="Art Piece">
-                    <div class="gallery-caption">Cat Dance Heaven</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="img/2001.jpg?v=1.1" alt="Art Piece">
-                    <div class="gallery-caption">2001</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="img/phonecrying.png?v=1.1" alt="Art Piece">
-                    <div class="gallery-caption">Phone Crying</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="img/phonecrying2.png?v=1.1" alt="Art Piece">
-                    <div class="gallery-caption">Phone Crying 2</div>
-                </div>
-                <!-- More gallery items can be added here -->
-            </div>
-        </section>
-        
-        <section id="videos" class="videos-section">
-            <h2 class="section-title">Video Works</h2>
-            <div class="video-gallery">
-                <div class="video-item">
-                    <!-- YouTube embed placeholder - replace YOUTUBE_ID with actual video ID -->
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-caption">Video Title 1</div>
-                </div>
-                <div class="video-item">
-                    <!-- YouTube embed placeholder - replace YOUTUBE_ID with actual video ID -->
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-caption">Video Title 2</div>
-                </div>
-                <!-- More video items can be added here -->
-            </div>
-        </section>
-        
-        <section id="about" class="about-section">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="img/profilepicture2.jpg?v=1.1" alt="Twin Slimes">
-                </div>
-                <div class="about-text">
-                    <p>I'm a multidisciplinary artist working across various mediums. My work explores the intersection of digital culture, technology, and emotion.</p>
-                    <p>As Twin Slimes, I create music, visual art, videos, and code projects that reflect my unique perspective on the digital world.</p>
-                    <p>Feel free to explore my work and connect with me through any of my social platforms.</p>
+            <div class="gallery-item video">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/CsYGLZkHURM" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-        </section>
+            <div class="gallery-item video">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Dt-SjtJUfdg" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </main>
     
     <footer>
-        <div class="footer-content">
-            <p>© 2024 Twin Slimes. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://soundcloud.com/twinslimes" target="_blank" class="social-icon" title="SoundCloud">🎵</a>
-                <a href="https://www.youtube.com/@twin.slimes" target="_blank" class="social-icon" title="YouTube">📹</a>
-                <a href="https://www.instagram.com/jude.wasson/" target="_blank" class="social-icon" title="Instagram">📸</a>
-                <a href="https://x.com/twinslimess" target="_blank" class="social-icon" title="X/Twitter">𝕏</a>
-                <a href="https://www.tiktok.com/@twinslimes01" target="_blank" class="social-icon" title="TikTok">🎬</a>
-                <a href="https://discord.gg/JfM2UDyTRW" target="_blank" class="social-icon" title="Discord">💬</a>
-                <a href="https://github.com/twinslimes" target="_blank" class="social-icon" title="GitHub">💻</a>
-            </div>
-        </div>
+        <p>© 2024 twinslimes</p>
     </footer>
 </body>
 </html> 
